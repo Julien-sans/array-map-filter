@@ -22,6 +22,10 @@ En sortie: [
  */
 
 function getStringsLength(strings) {
+  const lengthArray = strings.map(function(plat) {
+      return plat + ' contains ' + plat.length + ' characters'
+  });
+  return lengthArray;
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

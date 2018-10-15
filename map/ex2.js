@@ -43,6 +43,16 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  const descriptions = foods.map(function(plat){
+    if (plat.isVegetarian === true){
+      return plat.food + ' is suitable for vegetarians';
+    }
+    else
+    {
+      return plat.food + ' is not suitable for vegetarians';
+    }  
+    })
+    return descriptions;
 }
 
 

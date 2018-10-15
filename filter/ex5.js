@@ -39,6 +39,12 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  return items.filter(str =>{
+    if(str.includes(search) || str.includes(search.replace(search.charAt(0), search.charAt(0).toUpperCase()))){
+      return str;
+    }
+  })
+
 }
 
 // Ne pas modifier l'export
